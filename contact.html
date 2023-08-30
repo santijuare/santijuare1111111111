@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="iconpag.png" type="image/x-icon">
+    <link rel="shortcut icon" href="iconpag.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <button id="menu-button">Menú</button>
+        <nav id="nav-menu" role="navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Contacto</h1>
+        <p>¡Esperamos con ansias tus consultas! Estamos aquí para responder a todas tus preguntas sobre plantas.</p>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <div id="success-message" class="hidden">Mensaje enviado exitosamente. ¡Te responderemos pronto!</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+<footer>
+    <p>&copy; 2023 Tienda de plantas. Todos los derechos reservados.</p>
+</footer>
+</html>
